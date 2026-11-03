@@ -1,0 +1,22 @@
+{
+  "name": "opencode-laptop-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Loopback Streamable HTTP MCP bridge exposing DesktopCommander process tools to OpenCode over Tailscale.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node scripts/start-bridge.mjs",
+    "smoke": "node scripts/smoke-test.mjs",
+    "package:portable": "node scripts/package-portable.mjs"
+  },
+  "dependencies": {
+    "@wonderwhy-er/desktop-commander": "0.3.1",
+    "supergateway": "4.2.1"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "laptop": {
+      "type": "remote",
+      "url": "https://laptop.example-tailnet.ts.net/mcp",
+      "enabled": false,
+      "oauth": false,
+      "timeout": 120000,
+      "headers": {
+        "Authorization": "Bearer {env:LAPTOP_MCP_TOKEN}"
+      }
+    }
+  },
+  "permission": {
+    "laptop_start_process": "ask",
+    "laptop_read_process_output": "allow",
+    "laptop_interact_with_process": "ask",
+    "laptop_force_terminate": "ask",
+    "laptop_list_sessions": "allow"
+  }
+}

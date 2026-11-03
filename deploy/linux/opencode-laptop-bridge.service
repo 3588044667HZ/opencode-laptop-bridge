@@ -1,0 +1,17 @@
+[Unit]
+Description=OpenCode Laptop Bridge (DesktopCommander process tools)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/opencode-laptop-bridge
+EnvironmentFile=-%h/.config/opencode-laptop-bridge/env
+ExecStart=/usr/bin/node %h/opencode-laptop-bridge/scripts/start-bridge.mjs
+Restart=on-failure
+RestartSec=3
+KillMode=mixed
+TimeoutStopSec=15
+
+[Install]
+WantedBy=default.target
