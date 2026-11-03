@@ -2,6 +2,7 @@
   "name": "opencode-laptop-bridge",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Loopback Streamable HTTP MCP bridge exposing DesktopCommander process tools to OpenCode over Tailscale.",
   "engines": {
